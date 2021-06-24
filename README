@@ -4,17 +4,17 @@ QUICK AND DIRTY
 Execute the following from the src/ directory:
 
     ./configure    # try to figure out all implementation differences
-
+    
     cd lib         # build the basic library that all programs need
     make           # use "gmake" everywhere on BSD/OS systems
-
+    
     cd ../libfree  # continue building the basic library
     make
-
+    
     # note the following two lines are not needed on Linux systems
     cd ../libroute # only if your system supports 4.4BSD style routing sockets
     make           # only if your system supports 4.4BSD style routing sockets
-
+    
     cd ../intro    # build and test a basic client program
     make daytimetcpcli
     ./daytimetcpcli 127.0.0.1
@@ -112,6 +112,8 @@ not "yet" at the level of Posix.1g or X/Open XNS Issue 5.
   might generate warnings from your compiler, since you are printing
   a long without a corresponding long format specifier.
 
+# Source
+
 ## intro
 
 ### `daytimetcpcli.c`
@@ -119,5 +121,7 @@ This is an implementation of a TCP time-of-day client. Include create
 a TCP socket and specify server's IP address and port, establish 
 connection with server, read and display server's replay.
 
+### `daytimetcpsvr.c`
+A simple daytime server.
 
 
