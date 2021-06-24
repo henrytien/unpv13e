@@ -111,3 +111,13 @@ not "yet" at the level of Posix.1g or X/Open XNS Issue 5.
   instead of t_uscalar_t, some of the printf formats of these value
   might generate warnings from your compiler, since you are printing
   a long without a corresponding long format specifier.
+
+## intro
+
+### `daytimetcpcli.c`
+This is an implementation of a TCP time-of-day client. Include create 
+a TCP socket and specify server's IP address and port, establish 
+connection with server, read and display server's replay.
+
+
+
