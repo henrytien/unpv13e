@@ -125,3 +125,12 @@ connection with server, read and display server's replay.
 A simple daytime server.
 
 
+## Commands
+### netstat
+```shell
+➜  intro git:(master) ✗ netstat -ni
+Kernel Interface table
+Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0      1500    17311      0      0 0         15775      0      0      0 BMRU
+lo       65536    62684      0      0 0         62684      0      0      0 LRU
+```
