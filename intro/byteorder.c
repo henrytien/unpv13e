@@ -22,3 +22,21 @@ main(int argc, char **argv)
 
 	exit(0);
 }
+
+// #include <iostream>
+// typedef  union {
+//     short a;
+//     char c;
+// } test;
+
+// int main()
+// {
+//     test b;
+//     b.a = 0x0102;
+//     if (b.c == 0x02) {
+//         std:: cout << "little endian" <<std::endl;
+//     } else {
+//         std:: cout << "big endian" <<std::endl;
+//     }
+//     return 0;
+// }
